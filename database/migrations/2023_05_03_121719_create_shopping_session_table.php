@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('shopping_session', function (Blueprint $table) {
             $table->id();
+            $table->integer('total');
             $table->timestamps();
         });
     }

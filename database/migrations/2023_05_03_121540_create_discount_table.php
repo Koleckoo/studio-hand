@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('discount', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('desc');
+            $table->integer('discount');
+            $table->boolean('active');
             $table->timestamps();
         });
     }

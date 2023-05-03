@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('product_inventory', function (Blueprint $table) {
             $table->id();
+            $table->integer('quantity');
+            $table->text('desc');
             $table->timestamps();
         });
     }
